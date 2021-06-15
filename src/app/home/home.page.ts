@@ -6,7 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  selectedSegment: string;
 
   constructor() {}
 
+  refreshChart() {
+    console.log('change', this.selectedSegment);
+  }
 }
